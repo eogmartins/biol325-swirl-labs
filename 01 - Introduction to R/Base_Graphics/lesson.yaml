@@ -151,8 +151,12 @@
     of the form, plot(cars, ...) with various arguments added.
 
 - Class: text
-  Output: For each question, we will only want one additional argument at a time. 
-    Of course, you can pass in more than one argument when doing a real project.
+  Output: For each of the following questions, we will only want one additional 
+    argument at a time (we have made the exercise force you to only use one 
+    argument at a time). Of course, you can pass in more than one argument when 
+    doing a real project. In the last exercise with function plot(), we will 
+    remove the one-argument-change only constraint so you can build a plot by 
+    changing some of arguments you will learn below.
 
 - Class: cmd_question
   Output: Plot cars with a main title of "My Plot". Note that the argument for 
@@ -206,6 +210,18 @@
 - Class: text
   Output: It is, however, useful to have an introduction to base graphics 
     because many of the idioms in ggplot2 are modeled on them.
+
+- Class: cmd_question
+  Output: Before we look at tother type of base graphics, let's plot cars 
+    while at the same time setting, in this order, the x-axis to "Speed", the 
+    y-axis to "Stopping Distance", the plot title to "My Plot", the point shape 
+    to triangles (pch = 2), and the point colour to red (col = 2).
+  CorrectAnswer: plot(cars, xlab = "Speed", ylab = "Stopping Distance", 
+    main = "My Plot", col = 2, pch = 2)
+  AnswerTests: omnitest(correctExpr='plot(cars, xlab = "Speed", ylab = "Stopping Distance", 
+    main = "My Plot", col = 2, pch = 2)')
+  Hint: Type plot(cars, xlab = "Speed", ylab = "Stopping Distance", 
+    main = "My Plot", col = 2, pch = 2) to create the plot.
 
 - Class: text
   Output: Let's now look at some other functions in base graphics that may be 
@@ -272,7 +288,6 @@
     initial data inspection and are quick to use with variables in a data frame. 
     But they are limited, sometimes not intuitive, and not easily customizable. 
     The best place to go from here is to learn plotting with the ggplot2 package. 
-    We'll have a lab fully dedicated to data visualization using ggplot2. In the 
-    next and final lesson of this lab, you will quickly learn about functions and 
-    working with R scripts.
+    We'll have a lab fully dedicated to data visualization using ggplot2. That's
+    all for today!
   
