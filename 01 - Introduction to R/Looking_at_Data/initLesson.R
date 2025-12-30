@@ -7,10 +7,10 @@
 
 # Path to data
 .datapath <- file.path(.get_course_path(),
-                      'R_Programming_E', 'Looking_at_Data',
+                      '01 - Introduction to R', 'Looking_at_Data',
                       'plant-data.txt')
 # Read in data
-plants <- read.csv(.datapath, strip.white=TRUE, na.strings="")
+plants <- read.csv(.datapath, strip.white = TRUE, na.strings = "", as.is = FALSE)
 
 # Remove annoying columns
 .cols2rm <- c('Accepted.Symbol', 'Synonym.Symbol')
