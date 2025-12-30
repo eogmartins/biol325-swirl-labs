@@ -267,5 +267,4 @@
     important that you understand the difference between these two data structures,
     but in this course we will be working primarily with data frames. In future
     labs, you will see other ways to create data frames and learn how to wrangle
-    them. Next, let's see how we can read in a data file as a data frame and
-    look at the data."
+    them. Next, we will learn how to look at our data in R!"
